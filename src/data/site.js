@@ -1,4 +1,7 @@
 /** Conteúdo editorial da plataforma digital GYRA. */
+const assetsRoot = new URL('../../assets/', import.meta.url);
+const asset = (path) => assetsRoot.protocol === 'file:' ? `./assets/${path}` : new URL(path, assetsRoot).pathname;
+
 export const BRAND = Object.freeze({
   name: 'GYRA',
   descriptor: 'Agência Criativa',
@@ -20,15 +23,15 @@ export const NAV = Object.freeze([
 ]);
 
 export const ASSETS = Object.freeze({
-  chrome: './assets/figma-v3/editorial-creative.png',
-  branding: './assets/figma-v3/service-strategy.png',
-  audiovisual: './assets/figma-v3/mobile-content-production.png',
-  web: './assets/figma-v3/strategy-identity.png',
-  marketing: './assets/figma-v3/campaign-strategy.png',
-  automation: './assets/figma-v3/digital-automation.png',
-  ai: './assets/figma-v3/applied-ai.png',
-  product: './assets/figma-v3/business-presentation.png',
-  collage: './assets/figma-v3/portfolio-showcase.png',
+  chrome: asset('figma-v3/editorial-creative.png'),
+  branding: asset('figma-v3/service-strategy.png'),
+  audiovisual: asset('figma-v3/mobile-content-production.png'),
+  web: asset('figma-v3/strategy-identity.png'),
+  marketing: asset('figma-v3/campaign-strategy.png'),
+  automation: asset('figma-v3/digital-automation.png'),
+  ai: asset('figma-v3/applied-ai.png'),
+  product: asset('figma-v3/business-presentation.png'),
+  collage: asset('figma-v3/portfolio-showcase.png'),
 });
 
 export const SERVICES = Object.freeze([
