@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-label="Interface de inteligência artificial com documentos e revisão humana">
+<defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070a12"/><stop offset=".55" stop-color="#152348"/><stop offset="1" stop-color="#03040b"/></linearGradient>
+  <linearGradient id="chrome" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffffff"/><stop offset=".13" stop-color="#64738e"/><stop offset=".25" stop-color="#dfe7ff"/><stop offset=".39" stop-color="#0f1833"/><stop offset=".56" stop-color="#71809f"/><stop offset=".74" stop-color="#f7fbff"/><stop offset=".89" stop-color="#354261"/><stop offset="1" stop-color="#dae3f1"/></linearGradient>
+  <linearGradient id="electric" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7db2ff"/><stop offset=".48" stop-color="#0332fb"/><stop offset="1" stop-color="#080e47"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#104cff" stop-opacity=".64"/><stop offset="1" stop-color="#0332fb" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="53" height="53" patternUnits="userSpaceOnUse"><path d="M53 0H0V53" fill="none" stroke="#90a4d5" stroke-opacity=".11"/></pattern>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" seed="8" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".10"/></feComponentTransfer></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1200" height="840" fill="url(#ground)"/>
+<circle cx="850" cy="400" r="500" fill="url(#glow)"/>
+<rect width="1200" height="840" fill="url(#grid)"/>
+
+<rect x="139" y="124" width="921" height="590" rx="22" fill="#101c39" stroke="#7e91b8" stroke-width="11"/>
+<rect x="171" y="154" width="875" height="62" fill="#0b1326"/>
+<rect x="201" y="178" width="240" height="18" rx="9" fill="#c6d4eb"/>
+<rect x="201" y="251" width="365" height="166" rx="18" fill="#1f3266"/>
+<path d="M226 292H527M226 325H488M226 356H516M226 388H367" stroke="#88aaff" stroke-width="13"/>
+<rect x="614" y="250" width="390" height="211" rx="16" fill="#e8ecf5"/>
+<path d="M649 288H946M649 316H870M649 344H931M649 374H900" stroke="#889ab8" stroke-width="15"/>
+<rect x="649" y="400" width="177" height="33" rx="16" fill="#0332fb"/>
+<rect x="205" y="478" width="793" height="171" rx="20" fill="#122450"/>
+<circle cx="264" cy="537" r="21" fill="#f4ec91"/>
+<path d="M311 521H939M311 551H890M225 595H874" stroke="#91aade" stroke-width="12"/>
+
+<rect width="1200" height="840" filter="url(#noise)" opacity=".36"/>
+</svg>

@@ -1,0 +1,25 @@
+:root {
+  /* Cores oficiais do Brand System GYRA. */
+  --color-brand: #0332fb;
+  --color-ink: #090b12;
+  --color-white: #fff;
+  --color-silver: #cfd4e2;
+  --color-ice: #e8ecf5;
+  --color-accent-secondary: #f4ec91;
+  --color-surface: #11182b;
+  --color-surface-soft: #182541;
+  --color-border: #3b4b73;
+  --color-muted: #a5afc5;
+  --font-editorial: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-interface: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --page-max: 1300px;
+  --page-gutter: clamp(20px, 5vw, 72px);
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-pill: 100px;
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --motion-fast: 180ms;
+  --motion-normal: 440ms;
+  --shadow-glass: 0 20px 90px rgba(0, 10, 55, .25);
+}

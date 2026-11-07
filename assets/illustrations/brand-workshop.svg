@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-label="Direção criativa com moodboard e materiais de identidade visual">
+<defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070a12"/><stop offset=".55" stop-color="#152348"/><stop offset="1" stop-color="#03040b"/></linearGradient>
+  <linearGradient id="chrome" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffffff"/><stop offset=".13" stop-color="#64738e"/><stop offset=".25" stop-color="#dfe7ff"/><stop offset=".39" stop-color="#0f1833"/><stop offset=".56" stop-color="#71809f"/><stop offset=".74" stop-color="#f7fbff"/><stop offset=".89" stop-color="#354261"/><stop offset="1" stop-color="#dae3f1"/></linearGradient>
+  <linearGradient id="electric" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7db2ff"/><stop offset=".48" stop-color="#0332fb"/><stop offset="1" stop-color="#080e47"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#104cff" stop-opacity=".64"/><stop offset="1" stop-color="#0332fb" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="53" height="53" patternUnits="userSpaceOnUse"><path d="M53 0H0V53" fill="none" stroke="#90a4d5" stroke-opacity=".11"/></pattern>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" seed="8" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".10"/></feComponentTransfer></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1200" height="840" fill="url(#ground)"/>
+<circle cx="850" cy="400" r="500" fill="url(#glow)"/>
+<rect width="1200" height="840" fill="url(#grid)"/>
+
+<g transform="rotate(-8 590 400)">
+<rect x="140" y="146" width="452" height="540" rx="14" fill="#e5eaf4"/>
+<rect x="175" y="181" width="382" height="474" fill="#f9fbff"/>
+<rect x="202" y="208" width="202" height="130" fill="#0332fb"/>
+<path d="M218 259L274 226L326 292L380 237" fill="none" stroke="#fff" stroke-width="12"/>
+<text x="203" y="404" fill="#090b12" font-family="Arial,sans-serif" font-weight="800" font-size="54">GYRA.</text>
+<path d="M199 449H516M199 466H463M199 483H501" stroke="#8b99b5" stroke-width="8"/>
+<rect x="197" y="526" width="104" height="93" fill="#090b12"/><rect x="317" y="526" width="104" height="93" fill="#0332fb"/><rect x="438" y="526" width="83" height="93" fill="#cfd4e2"/>
+</g>
+<rect x="613" y="190" width="375" height="467" rx="14" fill="#0a0c16" stroke="#6880bd" stroke-opacity=".8"/>
+<rect x="643" y="222" width="315" height="287" rx="5" fill="#2441a1"/>
+<circle cx="801" cy="357" r="113" fill="none" stroke="url(#chrome)" stroke-width="26"/>
+<circle cx="801" cy="357" r="75" fill="#0c1742"/>
+<path d="M645 550H909M645 571H861M645 593H894" stroke="#64799b" stroke-width="11"/>
+<rect x="988" y="151" width="119" height="100" transform="rotate(12 988 151)" fill="#f4ec91"/>
+<path d="M1019 194H1076M1019 208H1061" stroke="#101522" stroke-width="7"/>
+
+<rect width="1200" height="840" filter="url(#noise)" opacity=".36"/>
+</svg>

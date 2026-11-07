@@ -1,0 +1,13 @@
+{
+  "name": "gyra-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Protótipo navegável local da GYRA — HTML, CSS e JavaScript modular, sem dependências externas.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

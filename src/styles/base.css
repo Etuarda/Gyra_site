@@ -1,0 +1,54 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: clip; }
+body { margin: 0; width: 100%; min-width: 0; overflow-x: clip; color: var(--color-ink); background: var(--color-white); font-family: var(--font-interface); -webkit-font-smoothing: antialiased; }
+img, svg { max-width: 100%; display: block; }
+img { object-fit: cover; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+a { text-decoration: none; color: inherit; }
+h1, h2, h3, h4, p, figure { margin: 0; }
+h1, h2, .headline-serif { font-family: var(--font-editorial); font-weight: 700; letter-spacing: -.045em; line-height: 1.03; }
+h1 { font-size: clamp(3.1rem, 6vw, 6.5rem); }
+h2 { font-size: clamp(2.4rem, 4.8vw, 4.8rem); }
+h3 { line-height: 1.16; }
+p { line-height: 1.55; }
+ul { margin: 0; padding-left: 1.3em; }
+::selection { background: var(--color-accent-secondary); color: var(--color-ink); }
+:focus-visible { outline: 3px solid var(--color-accent-secondary); outline-offset: 5px; }
+.skip-link { position: fixed; z-index: 2000; top: -70px; left: 20px; padding: 12px 16px; color: var(--color-ink); background: var(--color-accent-secondary); }
+.skip-link:focus { top: 16px; }
+.container { width: min(calc(100% - var(--page-gutter) * 2), var(--page-max)); min-width: 0; margin-inline: auto; }
+.micro, .eyebrow { font: 700 .72rem/1.25 var(--font-interface); text-transform: uppercase; letter-spacing: .085em; }
+.eyebrow { color: var(--color-brand); display: inline-block; margin-bottom: 1.2rem; }
+.eyebrow--light { color: var(--color-silver); }
+.section { padding-block: clamp(75px, 8vw, 120px); overflow: clip; }
+.section-light { background: var(--color-ice); color: var(--color-ink); }
+.section-light:nth-of-type(even) { background: var(--color-white); }
+.section-dark { background: var(--color-ink); color: var(--color-white); }
+.editorial-section { position: relative; isolation: isolate; }
+.editorial-section::before { content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none; background-image: linear-gradient(90deg, transparent calc(50% - .5px), rgba(3,50,251,.07) 50%, transparent calc(50% + .5px)), repeating-linear-gradient(90deg, transparent 0 calc(8.333% - 1px), rgba(3,50,251,.055) calc(8.333% - 1px) 8.333%); opacity: .65; }
+.section-dark.editorial-section::before { background-image: radial-gradient(circle at 80% 20%, rgba(3,50,251,.22), transparent 35%), repeating-linear-gradient(90deg, transparent 0 calc(8.333% - 1px), rgba(255,255,255,.045) calc(8.333% - 1px) 8.333%); opacity: 1; }
+.editorial-section__index { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; color: #7b86a0; font-size: .62rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; overflow: hidden; }
+.editorial-section__index::after { content: ''; height: 1px; flex: 1; background: currentColor; opacity: .35; }
+.section-dark .editorial-section__index { color: #7e8ba8; }
+.editorial-section .section-head { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(260px,.75fr); align-items: end; column-gap: 8%; max-width: none; }
+.editorial-section .section-head .eyebrow, .editorial-section .section-head h2 { grid-column: 1; }
+.editorial-section .section-head p { grid-column: 2; grid-row: 1 / span 2; align-self: end; border-left: 3px solid var(--color-brand); padding-left: 24px; margin-top: 0; }
+.section-head { max-width: 1140px; margin-bottom: clamp(36px, 5vw, 65px); }
+.section-head h2 { max-width: 1090px; }
+.section-head p { color: #58647b; max-width: 970px; margin-top: 1.45rem; font-size: clamp(.98rem, 1.25vw, 1.12rem); }
+.section-head--dark p { color: var(--color-silver); }
+.section-head--dark .eyebrow { color: var(--color-silver); }
+.texture { position: relative; isolation: isolate; }
+.texture::before { content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none; opacity: .23; background-image: radial-gradient(circle at 66% 25%, rgba(40,77,255,.42), transparent 46%), repeating-linear-gradient(0deg, rgba(255,255,255,.045) 0 1px, transparent 1px 52px), repeating-linear-gradient(90deg, rgba(255,255,255,.045) 0 1px, transparent 1px 52px); }
+.texture::after { content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none; opacity: .095; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E"); }
+.glass { background: rgba(7, 15, 31, .57); backdrop-filter: blur(18px) saturate(120%); -webkit-backdrop-filter: blur(18px) saturate(120%); border: 1px solid rgba(255,255,255,.19); box-shadow: var(--shadow-glass); }
+.motion-label { display: inline-flex; align-items: center; justify-content: center; min-height: 35px; padding: .55rem 1rem; border-radius: var(--radius-pill); background: var(--color-accent-secondary); color: var(--color-ink); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .035em; white-space: nowrap; }
+.motion-label--small { font-size: .68rem; min-height: 32px; }
+.button-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; padding: 16px 24px; border-radius: var(--radius-pill); background: var(--color-brand); color: var(--color-white); min-height: 50px; font-size: .88rem; font-weight: 700; white-space: nowrap; border: 1px solid transparent; transition: transform var(--motion-fast), background-color var(--motion-fast), box-shadow var(--motion-fast); }
+.button:hover { transform: translateY(-2px); box-shadow: 0 9px 20px rgba(0,30,155,.25); }
+.button--light { background: var(--color-white); color: var(--color-brand); }
+.button--outline { background: rgba(9,11,18,.28); color: var(--color-white); border-color: rgba(255,255,255,.38); }
+.button--outline:hover { border-color: var(--color-white); }
+.button--primary { background: var(--color-brand); color: var(--color-white); }

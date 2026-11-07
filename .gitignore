@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+!*.example
+figma-v3-overview.png
+gyra-sobre-review.png
+gyra-v3-local.png

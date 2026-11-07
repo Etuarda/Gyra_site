@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-label="Colagem editorial abstrata de imagens, tipografia e identidade visual">
+<defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070a12"/><stop offset=".55" stop-color="#152348"/><stop offset="1" stop-color="#03040b"/></linearGradient>
+  <linearGradient id="chrome" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffffff"/><stop offset=".13" stop-color="#64738e"/><stop offset=".25" stop-color="#dfe7ff"/><stop offset=".39" stop-color="#0f1833"/><stop offset=".56" stop-color="#71809f"/><stop offset=".74" stop-color="#f7fbff"/><stop offset=".89" stop-color="#354261"/><stop offset="1" stop-color="#dae3f1"/></linearGradient>
+  <linearGradient id="electric" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7db2ff"/><stop offset=".48" stop-color="#0332fb"/><stop offset="1" stop-color="#080e47"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#104cff" stop-opacity=".64"/><stop offset="1" stop-color="#0332fb" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="53" height="53" patternUnits="userSpaceOnUse"><path d="M53 0H0V53" fill="none" stroke="#90a4d5" stroke-opacity=".11"/></pattern>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" seed="8" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".10"/></feComponentTransfer></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1200" height="840" fill="url(#ground)"/>
+<circle cx="850" cy="400" r="500" fill="url(#glow)"/>
+<rect width="1200" height="840" fill="url(#grid)"/>
+
+<rect x="136" y="107" width="430" height="584" transform="rotate(-7 136 107)" fill="#e8ecf5"/>
+<rect x="214" y="160" width="289" height="248" fill="#0332fb"/>
+<path d="M237 342L319 195L376 291L442 227L487 344Z" fill="#b2d5ff"/>
+<path d="M238 471H495M238 502H449M238 533H478" stroke="#14234c" stroke-width="19"/>
+<rect x="584" y="207" width="435" height="449" transform="rotate(8 584 207)" fill="#111d43" stroke="#7f9bc8" stroke-width="5"/>
+<path d="M659 302C833 159 1060 363 863 519C667 677 601 417 730 384" fill="none" stroke="url(#chrome)" stroke-width="78" stroke-linecap="round"/>
+<rect x="832" y="118" width="208" height="102" transform="rotate(17 832 118)" fill="#f4ec91"/>
+<path d="M887 159H992M887 178H954" stroke="#0a142a" stroke-width="11"/>
+
+<rect width="1200" height="840" filter="url(#noise)" opacity=".36"/>
+</svg>

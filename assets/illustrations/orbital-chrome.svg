@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-label="Escultura cromada abstrata e órbita elétrica azul">
+<defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070a12"/><stop offset=".55" stop-color="#152348"/><stop offset="1" stop-color="#03040b"/></linearGradient>
+  <linearGradient id="chrome" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffffff"/><stop offset=".13" stop-color="#64738e"/><stop offset=".25" stop-color="#dfe7ff"/><stop offset=".39" stop-color="#0f1833"/><stop offset=".56" stop-color="#71809f"/><stop offset=".74" stop-color="#f7fbff"/><stop offset=".89" stop-color="#354261"/><stop offset="1" stop-color="#dae3f1"/></linearGradient>
+  <linearGradient id="electric" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7db2ff"/><stop offset=".48" stop-color="#0332fb"/><stop offset="1" stop-color="#080e47"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#104cff" stop-opacity=".64"/><stop offset="1" stop-color="#0332fb" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="53" height="53" patternUnits="userSpaceOnUse"><path d="M53 0H0V53" fill="none" stroke="#90a4d5" stroke-opacity=".11"/></pattern>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" seed="8" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".10"/></feComponentTransfer></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1200" height="840" fill="url(#ground)"/>
+<circle cx="850" cy="400" r="500" fill="url(#glow)"/>
+<rect width="1200" height="840" fill="url(#grid)"/>
+
+<ellipse cx="810" cy="445" rx="370" ry="255" fill="none" stroke="#0034ff" stroke-opacity=".4" stroke-width="65" filter="url(#shadow)" transform="rotate(-19 810 445)"/>
+<path d="M444 507C421 247 722 122 856 232C1002 352 820 580 682 610C553 636 501 458 590 365C723 224 996 164 1104 343C1196 494 1025 727 821 708" fill="none" stroke="#080e33" stroke-width="126" stroke-linecap="round"/>
+<path d="M444 507C421 247 722 122 856 232C1002 352 820 580 682 610C553 636 501 458 590 365C723 224 996 164 1104 343C1196 494 1025 727 821 708" fill="none" stroke="url(#chrome)" stroke-width="96" stroke-linecap="round"/>
+<path d="M451 506C439 261 729 143 848 242C976 359 812 551 685 596C567 621 515 458 596 382C732 230 994 191 1090 350C1176 497 1015 698 831 688" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="9" stroke-linecap="round"/>
+<ellipse cx="804" cy="445" rx="422" ry="194" transform="rotate(-19 804 445)" fill="none" stroke="#3c84ff" stroke-opacity=".76" stroke-width="4"/>
+<circle cx="398" cy="558" r="15" fill="#f4ec91"/><circle cx="1092" cy="290" r="6" fill="#fff"/>
+
+<rect width="1200" height="840" filter="url(#noise)" opacity=".36"/>
+</svg>

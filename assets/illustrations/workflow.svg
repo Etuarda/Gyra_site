@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-label="Fluxograma digital de automações com software e conexões">
+<defs>
+  <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070a12"/><stop offset=".55" stop-color="#152348"/><stop offset="1" stop-color="#03040b"/></linearGradient>
+  <linearGradient id="chrome" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffffff"/><stop offset=".13" stop-color="#64738e"/><stop offset=".25" stop-color="#dfe7ff"/><stop offset=".39" stop-color="#0f1833"/><stop offset=".56" stop-color="#71809f"/><stop offset=".74" stop-color="#f7fbff"/><stop offset=".89" stop-color="#354261"/><stop offset="1" stop-color="#dae3f1"/></linearGradient>
+  <linearGradient id="electric" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7db2ff"/><stop offset=".48" stop-color="#0332fb"/><stop offset="1" stop-color="#080e47"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#104cff" stop-opacity=".64"/><stop offset="1" stop-color="#0332fb" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="53" height="53" patternUnits="userSpaceOnUse"><path d="M53 0H0V53" fill="none" stroke="#90a4d5" stroke-opacity=".11"/></pattern>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" seed="8" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".10"/></feComponentTransfer></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1200" height="840" fill="url(#ground)"/>
+<circle cx="850" cy="400" r="500" fill="url(#glow)"/>
+<rect width="1200" height="840" fill="url(#grid)"/>
+
+<rect x="124" y="128" width="950" height="577" rx="25" fill="#0a1328" stroke="url(#chrome)" stroke-width="9"/>
+<rect x="152" y="158" width="896" height="54" fill="#14254b"/>
+<circle cx="184" cy="185" r="9" fill="#f4ec91"/>
+<path d="M244 184H597" stroke="#647da7" stroke-width="10"/>
+<path d="M348 356H506V284H679M348 356H506V516H679" fill="none" stroke="#8fb3ff" stroke-width="12"/>
+<path d="M853 284H948V405H679M853 516H948V405" fill="none" stroke="#8fb3ff" stroke-width="12"/>
+<rect x="195" y="304" width="172" height="109" rx="18" fill="#0332fb"/><rect x="631" y="237" width="236" height="97" rx="17" fill="#223b79" stroke="#7399ee" stroke-width="4"/><rect x="631" y="467" width="236" height="97" rx="17" fill="#223b79" stroke="#7399ee" stroke-width="4"/>
+<rect x="900" y="350" width="100" height="109" rx="15" fill="#eef3ff"/>
+<circle cx="278" cy="355" r="25" fill="none" stroke="#fff" stroke-width="9"/>
+<path d="M687 268H827M687 288H775M687 500H827M687 520H775" stroke="#c0d3fa" stroke-width="11"/>
+<rect x="928" y="378" width="45" height="48" rx="6" fill="#0332fb"/>
+
+<rect width="1200" height="840" filter="url(#noise)" opacity=".36"/>
+</svg>
